@@ -7,8 +7,6 @@ import TimeSelect from "./components/TimeSelect";
 import SeatSelect from "./components/SeatSelect";
 import Order from "./components/Order";
 
-import { useParams } from 'react-router-dom';
-
 function App() {
 	return (
 		<BrowserRouter>

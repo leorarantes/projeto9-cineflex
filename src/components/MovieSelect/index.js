@@ -16,7 +16,6 @@ export default function MovieSelect() {
 		const requisition = axios.get("https://mock-api.driven.com.br/api/v5/cineflex/movies");
 
 		requisition.then(answer => {
-            console.log(answer.data)
 			setMoviesArray(answer.data);
 		});
 	}, []);
@@ -24,11 +23,11 @@ export default function MovieSelect() {
     return (
         <div className="MovieSelect">
             <Select text="Selecione o filme"/>
-            {moviesArray.map(element => {
+            {moviesArray.map((element, index) => {
                 const {id, posterURL} = element;
                 const to = `/sessoes/${id}`;
                 return (
-                    <Link to={to}>
+                    <Link to={to} key={index}>
                     <div className="movie-box">
                         <img src={posterURL} />
                         <div className="cape"></div>

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    text-decoration: solid;
 }
 
 .TimeSelect {
@@ -10,7 +11,7 @@
 
 .TimeSelect .box {
     width: 100%;
-    height: 120px;
+    height: 115px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
