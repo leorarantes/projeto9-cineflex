@@ -7,6 +7,7 @@ import TimeSelect from "./components/TimeSelect";
 import SeatSelect from "./components/SeatSelect";
 import Order from "./components/Order";
 
+import { useParams } from 'react-router-dom';
 
 function App() {
 	return (
@@ -14,8 +15,8 @@ function App() {
             <Header />
 			<Routes>
                 <Route path="/" element={<MovieSelect />} />
-				<Route path="/sessoes" element={<TimeSelect />} />
-				<Route path="/assentos" element={<SeatSelect />} />
+				<Route path="/sessoes/:idFilme" element={<TimeSelect />} />
+				<Route path="/assentos/:idSessao" element={<SeatSelect />} />
 				<Route path="/sucesso" element={<Order />} />
 			</Routes>
 		</BrowserRouter>

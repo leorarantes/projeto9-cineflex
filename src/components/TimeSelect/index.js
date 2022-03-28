@@ -1,10 +1,17 @@
 import "./reset.css";
 import "./style.css";
 
+import axios from 'axios';
+
 import Select from "../Select";
 import Footer from "../Footer";
 
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+
 export default function TimeSelect() {
+    const { idFilme } = useParams();
+
     const timesObject =
         {
             "id": 1,
