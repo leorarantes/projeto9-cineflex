@@ -1,14 +1,9 @@
 import "./reset.css";
 import "./style.css";
 
+import { Link } from "react-router-dom";
+
 export default function Order() {
-
-    localStorage.setItem("movie", "Enola Holmes");
-    localStorage.setItem("date", "16-03-2022");
-    localStorage.setItem("personName", "Leonardo");
-    localStorage.setItem("personCPF", "123.456.678-90");
-    localStorage.setItem("seats", "[1, 2, 3]");
-
     const movie = localStorage.getItem("movie");
     const date = localStorage.getItem("date");
     const personName = localStorage.getItem("personName");
@@ -32,7 +27,9 @@ export default function Order() {
                 <h2>{personName}</h2>
                 <h2>{personCPF}</h2>
             </div>
+            <Link to="/">
             <button><h1>Voltar para home</h1></button>
+            </Link>
         </div>
     );
 }

@@ -26,7 +26,7 @@ export default function TimeSelect() {
 
     const strObj = JSON.stringify(timesObject);
 
-    if (strObj == "{}") {
+    if (strObj === "{}") {
         return (<></>);
     }
     else {
@@ -38,13 +38,13 @@ export default function TimeSelect() {
                     const weekday = element1.weekday;
                     const date = element1.date;
                     const showtimes = element1.showtimes;
-                    const to = `/assentos/${id}`;
 
                     return (
                         <div className="box">
                             <h1>{weekday} - {date}</h1>
                             <div>
                                 {showtimes.map((element2, index) => {
+                                    const to = `/assentos/${element2.id}`;
                                     return (
                                         <Link to={to} key={index}>
                                             <button>
