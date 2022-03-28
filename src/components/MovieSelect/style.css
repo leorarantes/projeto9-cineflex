@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.MovieSelect {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 172px;
+    padding-bottom: 18px;
+}
+
+.MovieSelect .movie-box {
+    width: 145px;
+    height: 209px;
+    background: #FFFFFF;
+    position: relative;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    padding: 9px;
+}
+
+.MovieSelect .movie-box img {
+    width: 129px;
+    height: 193px;
+    position: absolute;
+}
+
+.MovieSelect .cape {
+    width: 129px;
+    height: 193px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+.MovieSelect .cape:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+.Order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 62px;
+}
+
+.Order .done {
+    width: 180px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #247A6B;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-top: 40px;
+}
+
+.Order .box {
+    width: 327px;
+    height: fit-content;
+    margin-top: 40px;
+}
+
+.Order .box h1, .Order .box h2 {
+    letter-spacing: 0.04em;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.Order .box h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #293845;
+    margin-bottom: 2px;
+}
+
+.Order .box h2 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #293845;
+}
+
+.Order button {
+    width: 225px;
+    height: 42px;
+    background: #E8833A;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.Order button h1 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font-family: 'Roboto';
+    font-style: normal;
+}
